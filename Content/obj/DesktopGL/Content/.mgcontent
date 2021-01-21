@@ -4,8 +4,8 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/steve/OneDrive/Desktop/ArcEngine/Content/Icon.bmp</File>
-    <File>C:/Users/steve/OneDrive/Desktop/ArcEngine/Content/Wall.png</File>
+    <File>c:/Users/steve/Desktop/Arctic-Engine/Content/Icon.bmp</File>
+    <File>c:/Users/steve/Desktop/Arctic-Engine/Content/Wall.png</File>
   </SourceFiles>
   <DestFiles>
     <File>Icon</File>

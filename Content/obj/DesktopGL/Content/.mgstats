@@ -1,3 +1,3 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/steve/OneDrive/Desktop/ArcEngine/Content/Icon.bmp","C:/Users/steve/OneDrive/Desktop/ArcEngine/Content/bin/DesktopGL/Content/Icon.xnb","TextureProcessor","Texture2DContent",262282,262229,0.1596287
-"C:/Users/steve/OneDrive/Desktop/ArcEngine/Content/Wall.png","C:/Users/steve/OneDrive/Desktop/ArcEngine/Content/bin/DesktopGL/Content/Wall.xnb","TextureProcessor","Texture2DContent",105,4181,0.0064739
+"c:/Users/steve/Desktop/Arctic-Engine/Content/Icon.bmp","c:/Users/steve/Desktop/Arctic-Engine/Content/bin/DesktopGL/Content/Icon.xnb","TextureProcessor","Texture2DContent",262282,262229,0.1639555
+"c:/Users/steve/Desktop/Arctic-Engine/Content/Wall.png","c:/Users/steve/Desktop/Arctic-Engine/Content/bin/DesktopGL/Content/Wall.xnb","TextureProcessor","Texture2DContent",105,4181,0.0304881

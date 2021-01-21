@@ -57,7 +57,7 @@ namespace ArcEngine
 
         void CreateLevel()
         {
-            objects.Add(new TopDownController(new Vector2(100, 100), new Vector2(1, 1), 0f, 10f, 1, 1, 4));
+            objects.Add(new PlayerController(new Vector2(100, 100), new Vector2(1, 1), 0f, 10f, 1, 1, 4));
             objects.Add(new Wall(new Vector2(0,400), new Vector2(300,700), 0f));
         }
 

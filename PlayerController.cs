@@ -10,16 +10,19 @@ using Microsoft.Xna.Framework.Media;
 
 namespace ArcEngine
 {
-    public class TopDownController : CollisionObject
+    public class PlayerController : CollisionObject
     {
         public static Keys UpKey = Keys.W;
         public static Keys DownKey = Keys.S;
         public static Keys LeftKey = Keys.A;
         public static Keys RightKey = Keys.D;
+        public static Keys JumpKey = Keys.Space;
 
         public static bool DiagonalMovement = false;
 
-        public TopDownController(Vector2 Position, Vector2 Scale, float Rotation, float Speed, float Accel, float Decel, float MaxSpeed)
+        public static bool isPlatformer = false;
+
+        public PlayerController(Vector2 Position, Vector2 Scale, float Rotation, float Speed, float Accel, float Decel, float MaxSpeed)
         {
             this.Position = Position;
             this.Scale = Scale;
@@ -58,24 +61,25 @@ namespace ArcEngine
             }
 
             Position += Velocity;
+            Velocity = TendToZero(Velocity, Decel);
 
-            Velocity.X = TendToZero(Velocity.X, Decel);
-            Velocity.Y = TendToZero(Velocity.Y, Decel);
             base.UpdateObject(gameTime, objects);
         }
 
         private void Move() {
-            if (Keyboard.GetState().IsKeyDown(UpKey)) {
-                MoveUp();
-            }
-            if (Keyboard.GetState().IsKeyDown(DownKey)) {
-                MoveDown();
-            }
-            if (Keyboard.GetState().IsKeyDown(LeftKey)) {
-                MoveLeft();
-            }
-            if (Keyboard.GetState().IsKeyDown(RightKey)) {
-                MoveRight();
+            if(!isPlatformer) {
+                if (Keyboard.GetState().IsKeyDown(UpKey)) {
+                    MoveUp();
+                }
+                if (Keyboard.GetState().IsKeyDown(DownKey)) {
+                    MoveDown();
+                }
+                if (Keyboard.GetState().IsKeyDown(LeftKey)) {
+                    MoveLeft();
+                }
+                if (Keyboard.GetState().IsKeyDown(RightKey)) {
+                    MoveRight();
+                }
             }
         }
 
